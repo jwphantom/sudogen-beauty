@@ -1,0 +1,42 @@
+<app-top-right></app-top-right>
+
+<div class="main-warp">
+    <app-nav></app-nav>
+    <!-- Page section -->
+    <div class="page-section elements-page">
+        <div class="element">
+            <h2 class="el-title">Nos produits</h2>
+            <div class="row">
+               
+
+                <article class="card" (click)="onViewProduct(i)" *ngFor="let produit of produits; let i = index">
+                    <header class="cardThumb">
+                        <a>
+                            <img src="../../../assets/img/{{produit.short_name}}.jpg">
+                        </a>
+                    </header>
+                    <div class="cardDate">
+                        <span class="cardDateDay">{{ produit.mois_ajout }}</span>
+                        <span class="cardDateMonth">{{ produit.annee_ajout }}</span>
+                    </div>
+                    <div class="cardBody">
+                        <div class="cardCategory"><a>{{ produit.prix }}</a></div>
+                        <h2 class="cardTitle"><a>{{ produit.nom }}</a></h2>
+                        <p class="cardDescription">
+                            In ut quam quis magna pulvinar tempor at non elit. Ut lacinia elit vestibulum nulla
+                            accumsan, et fringilla mi accumsan. Etiam urna justo, luctus non porta eget, interdum quis
+                            tellus.
+                            
+                        </p>
+                    </div>
+                    <footer class="cardFooter">
+                        <span class="icon icon--time"></span>{{ produit.duree }} Semaines
+                        <span class="icon icon--comment"></span>{{ produit.client_satisfait }} Clients
+                    </footer>
+                </article>
+
+            </div>
+        </div>
+    </div>
+    <!-- Page section end-->
+</div>
