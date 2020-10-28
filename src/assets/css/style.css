@@ -1596,7 +1596,7 @@ ol {
 /*custom*/
 
 .card {
-	width: 250px;
+	width: 600px;
 	background-color: #fff;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 	transition: box-shadow 0.3s;
@@ -1641,7 +1641,6 @@ ol {
   }
   
   .cardThumb {
-	height: 300px;
 	overflow: hidden;
 	background-color: #000;
 	transition: height 0.3s;

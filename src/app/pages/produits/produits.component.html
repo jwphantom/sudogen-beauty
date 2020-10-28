@@ -9,7 +9,7 @@
             <div class="row">
                
 
-                <article class="card" (click)="onViewProduct(i)" *ngFor="let produit of produits; let i = index">
+                <article class="card col-lg-5" (click)="onViewProduct(i)" *ngFor="let produit of produits; let i = index">
                     <header class="cardThumb">
                         <a>
                             <img src="../../../assets/img/{{produit.short_name}}.jpg">
@@ -30,7 +30,7 @@
                         </p>
                     </div>
                     <footer class="cardFooter">
-                        <span class="icon icon--time"></span>{{ produit.duree }} Semaines
+                        <span class="icon icon--time"></span>{{ produit.duree }} Sachets
                         <span class="icon icon--comment"></span>{{ produit.client_satisfait }} Clients
                     </footer>
                 </article>
