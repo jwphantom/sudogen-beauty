@@ -18,7 +18,7 @@ export class SingleProduitComponent implements OnInit {
 	description;
 	client_satisfait: String;
 	duree: String;
-	short_name: String
+	short_name: String;
 
 	constructor(private produitService: ProduitService,
 		private route: ActivatedRoute,
